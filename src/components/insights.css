@@ -1,0 +1,202 @@
+.insights-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.insight-card {
+  background: var(--bg-card);
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: var(--shadow);
+}
+
+.insight-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.insight-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.insight-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.insight-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.5px;
+}
+
+.insight-detail {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.pro-insights {
+  background: var(--bg-card);
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: var(--shadow);
+}
+
+.pro-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pro-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.insight-notice {
+  font-size: 13px;
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--primary) 25%, transparent);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.light-icon {
+  color: var(--warning);
+}
+
+.recom-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recom-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-main);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: transform 0.2s;
+}
+
+.recom-item:hover {
+  transform: scale(1.01);
+}
+
+.recom-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.recom-dot.success {
+  background: var(--success);
+}
+
+.recom-dot.warning {
+  background: var(--warning);
+}
+
+.recom-dot.danger {
+  background: var(--danger);
+}
+
+.recom-text {
+  flex: 1;
+}
+
+.recom-text strong {
+  display: block;
+  font-size: 15px;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.recom-text p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.recom-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.recom-btn:hover {
+  background: var(--bg-card);
+}
+
+@media (max-width: 768px) {
+  .insights-container {
+    gap: 18px;
+  }
+
+  .insights-grid {
+    gap: 12px;
+  }
+
+  .insight-card {
+    padding: 16px;
+    border-radius: 16px;
+    gap: 12px;
+  }
+
+  .insight-value {
+    font-size: 21px;
+  }
+
+  .pro-insights {
+    padding: 16px;
+    border-radius: 16px;
+    gap: 14px;
+  }
+
+  .recom-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .recom-btn {
+    padding-left: 0;
+  }
+}
