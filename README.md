@@ -5,7 +5,7 @@ It helps users track financial activity with summary metrics, transaction explor
 
 ## Links
 
-- Live Demo: `[<Finvue>](https://finvue-mu.vercel.app/)`
+- Live Demo: https://finvue-mu.vercel.app/
 
 ## Quick Screenshots
 
